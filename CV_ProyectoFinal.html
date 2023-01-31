@@ -1,0 +1,281 @@
+<!--CODIGO HTML INICIO-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CV.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>CV_ProyectoFinal</title>
+</head>
+<body>
+
+    <section id="todo" class="sectionflex">
+        <section id="principal" class="sectionflexcolumn">
+            <div id="nombre"  >
+                <h1 id="titulo">Sergio Ignacio Castillo</h1>
+            </div>
+
+            <hr />
+
+            <div id="profesional" >
+                <h2>Resumen Profesional</h2>
+                <p>Programador web con más de 5 años de trayectoría desarrolladas
+                    en el eCommerce. A lo largo de estos años, he tenido el privilegio
+                    de formar parte en la creacion de webs como geekworld.com.ar y aroundtheworld.com, 
+                    las cuales han cultivado un gran éxito, tanto en trafico como en conversiones. 
+                    Busco formar parte de un equipo que empuje mi capacidad creativa al siguiente nivel, 
+                    aportando mis amplios conocimienos en CSS.
+                </p>
+            </div>
+
+            <hr />
+
+            <div>
+                <h2>Historia Laboral</h2>
+                <p>Junio 2017 - Marzo 2020</p>
+                <p><strong>Desarrolladora web eCommerce Hays Response</strong></p>
+                <ul>
+                    <li>Maquetacion mediante CSS</li>
+                    <li>Optimización de SEO on page</li>
+                    <li>Programación con JavaScript</li>
+                    <li>Diseño, desarrollo e implementación de interfaces de BBDD</li>
+                </ul>
+
+                <p>Enero 2015 - Mayo 2016</p>
+                <p><strong>Desarrolladora SharePoint X25 Informatica</strong></p>
+                <ul>
+                    <li>Elaboración de requisitos funcionales y documentos de especificaciones técnicas.</li>
+                    <li>Desarrollo de aplicaciones web basadas en tecnologías de Sharepoint Framework.</li>
+                    <li>Creación de componentes para tranferir datos seguros entre webs y sistemas internos.</li>
+                    <li>Elaboración de diseños graficos Adobe Photoshop e Illustrator.</li>
+                </ul>
+            </div>
+
+            <hr />
+
+            <div>
+                <h2>Formación</h2>
+                <p>2015</p>
+                <p>Grado Superior en Desarrollo de Aplicaciones Web</p>
+                <p>IES Miguel Catalan, Zaragosa</p>
+                <br />
+                <p>2013</p>
+                <p>Bachillerato de Ciencias</p>
+                <p>IES Luis Buñuel</p>
+            </div>
+
+        </section>
+        <section id="contacto" class="sectionflexcolumn">
+            <img class="circular_square" id="foto_perfil" src="https://randomuser.me/api/portraits/men/51.jpg" alt="Foto Perfil">
+            <div>
+                <ul id="contacto_list">
+                <li id="telefono">3401 490452</li>
+                <li id="email">sergio-cast@gmail.com</li>
+                <li id="direccion">Ameghino 1272, Maria Susana, Santa Fe</li>
+                </ul>
+            </div>
+            
+            <hr />
+
+            <div>
+                <h2>Idiomas</h2>
+                <ul>
+                    <li>Ingles C1</li>
+                    <li>Francés B2</li>
+                </ul>
+            </div>
+
+            <hr />
+
+            <div>
+                <h2>Aptitudes</h2>
+                <ul>
+                    <li>Trabajo en equipo.</li>
+                    <li>Iniciativa.</li>
+                    <li>Resolución de problemas.</li>
+                    <li>Aprendizaje fluido.</li>
+                    <li>Comunicación efectiva.</li>
+                </ul>
+            </div>
+
+            <hr />
+
+            <div>
+                <h2>Habilidades Informáticas</h2>
+                <ul>
+                    <li>Programación con JavaScript, CSS, HTML, C#, SQL.</li>
+                    <li>Conocimientos avanzados de photoshop.</li>
+                    <li>Manejo de MySQL, MariaDB, Mongodb.</li>
+                    <li>Desarrollo de aplicaciones móviles.</li>
+                    <li>Maquetación CSS.</li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <footer><button type="button" id="modo_noche">Modo noche</button></footer>
+    <script src="CV.js"></script>
+</body>
+</html>
+
+<!--CODIGO HTML FINAL-->
+
+
+
+
+
+<!--CODIGO CSS INICIO-->
+h1{
+text-align: center;
+font-family: 'Noto Sans', sans-serif;
+font-size: 90px;
+/*margin:15px 0 25px 0;*/
+margin: 0 0 0 0;
+}
+
+h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type:disc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+hr{
+    width: 90%;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.75),
+     rgba(0, 0, 150, 0.75), rgba(0,0,0,0.75));
+     
+}
+
+.sectionflex{
+    display: flex;
+    flex-direction: row;
+}
+.sectionflexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.circular_square{
+    border-radius: 50%;
+}
+#foto_perfil{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    align-self: center;
+    border-style:double;
+    border-width: 5px;
+}
+
+#principal{
+    width: 70%;
+    margin: 0 20px 0 25px;
+    
+}
+
+/*#principal>div{
+    padding-left: 20px;
+}*/
+
+#principal>div>p{
+    margin: 10px 0 10px 0;
+}
+
+#nombre{
+    background-color:white;
+    height:auto;
+    width: 900px;
+    align-self: center;
+}
+
+
+#contacto{
+    background-color: grey;
+    width: 30%;
+    height: auto;
+}
+
+#contacto>div>h2{
+    padding-left: 25px;
+}
+
+#contacto_list>li{
+    padding-left: 2rem;
+    padding-bottom: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#contacto>div>ul>li{
+    margin: 0 0 10px 10px;
+}
+
+#telefono{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/657/657099.png);
+    background-size: 1.4rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+#email{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3447/3447672.png);
+    background-size: 1.4rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+#direccion{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/67/67347.png?w=740&t=st=1675057184~exp=1675057784~hmac=3eff3710f859745d6838a3818cf8ba2424b99a69364a7f434f9575f49de67a97);
+    background-size: 1.4rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.dark-mode{
+    background-color: rgb(56, 56, 56);
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode p, .dark-mode ul{
+    color: white;
+    background-color: rgb(56, 56, 56);
+}
+
+.dark-mode #contacto{
+    background-color: black;
+}
+
+.dark-mode #contacto>div, .dark-mode #contacto>ul, .dark-mode #contacto>li{
+    color:white;
+    background-color: black;
+}
+<!--CODIGO CSS FINAL-->
+
+
+
+
+<!--CODIGO JAVASCRIPT INICIO-->
+
+document.getElementById('modo_noche').onclick = function(){
+    document.getElementById('todo').classList.remove("sectionflexcolumn")
+    document.getElementById('todo').classList.add("dark-mode")
+
+}
+<!--CODIGO JAVASCRIPT FINAL-->
